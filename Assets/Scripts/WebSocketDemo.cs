@@ -7,13 +7,15 @@ using UnityEngine.UI;
 // Use plugin namespace
 using HybridWebSocket;
 
-public class WebSocketDemo : MonoBehaviour {
-
+public class WebSocketDemo : MonoBehaviour
+{
     string message = "";
     Text info;
     WebSocket ws;
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start()
+    {
         info = GameObject.Find("Info").gameObject.GetComponent<Text>();
 
         // Create WebSocket instance
@@ -53,11 +55,12 @@ public class WebSocketDemo : MonoBehaviour {
         // Connect to the server
         ws.Connect();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		info.text = message;
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+        info.text = message;
+    }
 
     void OnApplicationQuit()
     {
