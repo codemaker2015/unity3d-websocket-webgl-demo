@@ -2,7 +2,7 @@
 
 Hybrid event-driven WebSocket implementation for Unity 3D.
 
-It automatically compiles browser or native implementation based on project's target platform. Native implementation is using [WebSocketSharp](https://github.com/sta/websocket-sharp) library (must be downloaded separately - see below). For the browser implementation the custom emscripten JSLIB is used.
+It automatically compiles browser or native implementation based on project's target platform. Native implementation is using [WebSocketSharp](https://github.com/sta/websocket-sharp) library. For the browser implementation the custom emscripten JSLIB is used.
 
 ![demo](Demos/demo.gif)
 
